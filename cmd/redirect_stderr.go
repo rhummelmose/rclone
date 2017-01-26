@@ -7,7 +7,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/ncw/rclone/fs"
+	"fs"
 )
 
 // redirectStderr to the file passed in

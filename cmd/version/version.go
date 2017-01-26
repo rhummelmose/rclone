@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/ncw/rclone/cmd"
+	"cmd"
 	"github.com/spf13/cobra"
 )
 

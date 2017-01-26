@@ -59,10 +59,10 @@ package {{ .FsName }}_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
-	"github.com/ncw/rclone/{{ .FsName }}"
-{{ if eq .FsName "crypt" }}	_ "github.com/ncw/rclone/local"
+	"fs"
+	"fstest/fstests"
+	"{{ .FsName }}"
+{{ if eq .FsName "crypt" }}	_ "local"
 {{end}})
 
 func TestSetup{{ .Suffix }}(t *testing.T)() {

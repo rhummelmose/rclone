@@ -3,8 +3,8 @@ package md5sum
 import (
 	"os"
 
-	"github.com/ncw/rclone/cmd"
-	"github.com/ncw/rclone/fs"
+	"cmd"
+	"fs"
 	"github.com/spf13/cobra"
 )
 

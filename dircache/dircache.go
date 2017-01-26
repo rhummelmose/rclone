@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ncw/rclone/fs"
+	"fs"
 	"github.com/pkg/errors"
 )
 

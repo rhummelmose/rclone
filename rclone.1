@@ -184,7 +184,7 @@ dependencies first with this
 .IP
 .nf
 \f[C]
-go\ get\ \-u\ \-v\ github.com/ncw/rclone/...
+go\ get\ \-u\ \-v\ ...
 \f[]
 .fi
 .SS Installation with Ansible
@@ -1151,7 +1151,7 @@ rclone\ copy\ "E:\\folder\ name\\folder\ name\\folder\ name"\ remote:backup
 .fi
 .PP
 If you are using the root directory on its own then don\[aq]t quote it
-(see #464 (https://github.com/ncw/rclone/issues/464) for why), eg
+(see #464 (https://issues/464) for why), eg
 .IP
 .nf
 \f[C]
@@ -1308,7 +1308,7 @@ transfer.
 .PP
 This can be useful for transferring files to and from onedrive which
 occasionally misreports the size of image files (see
-#399 (https://github.com/ncw/rclone/issues/399) for more info).
+#399 (https://issues/399) for more info).
 .SS \-I, \-\-ignore\-times
 .PP
 Using this option will cause rclone to unconditionally upload all files
@@ -2640,7 +2640,7 @@ Yes
 T}@T{
 Yes
 T}@T{
-No #575 (https://github.com/ncw/rclone/issues/575)
+No #575 (https://issues/575)
 T}
 T{
 Amazon S3
@@ -2679,7 +2679,7 @@ Yes
 T}@T{
 Yes
 T}@T{
-No #575 (https://github.com/ncw/rclone/issues/575)
+No #575 (https://issues/575)
 T}
 T{
 Google Cloud Storage
@@ -2705,7 +2705,7 @@ Yes
 T}@T{
 Yes
 T}@T{
-No #575 (https://github.com/ncw/rclone/issues/575)
+No #575 (https://issues/575)
 T}
 T{
 Microsoft One Drive
@@ -2714,11 +2714,11 @@ Yes
 T}@T{
 Yes
 T}@T{
-No #197 (https://github.com/ncw/rclone/issues/197)
+No #197 (https://issues/197)
 T}@T{
-No #197 (https://github.com/ncw/rclone/issues/197)
+No #197 (https://issues/197)
 T}@T{
-No #575 (https://github.com/ncw/rclone/issues/575)
+No #575 (https://issues/575)
 T}
 T{
 Hubic
@@ -2757,7 +2757,7 @@ No
 T}@T{
 No
 T}@T{
-No #575 (https://github.com/ncw/rclone/issues/575)
+No #575 (https://issues/575)
 T}
 T{
 The local filesystem
@@ -3966,10 +3966,10 @@ V1 public API, so rclone can\[aq]t support modified time with Dropbox.
 .PP
 This may change in the future \- see these issues for details:
 .IP \[bu] 2
-Dropbox V2 API (https://github.com/ncw/rclone/issues/349)
+Dropbox V2 API (https://issues/349)
 .IP \[bu] 2
 Allow syncs for remotes that can\[aq]t set modtime on existing
-objects (https://github.com/ncw/rclone/issues/348)
+objects (https://issues/348)
 .PP
 Dropbox doesn\[aq]t return any sort of checksum (MD5 or SHA1).
 .PP
@@ -4917,7 +4917,7 @@ All copy commands send the following 4 requests:
 The \f[C]b2_list_file_names\f[] request will be sent once for every 1k
 files in the remote path, providing the checksum and modification time
 of the listed files.
-As of version 1.33 issue #818 (https://github.com/ncw/rclone/issues/818)
+As of version 1.33 issue #818 (https://issues/818)
 causes extra requests to be sent when using B2 with Crypt.
 When a copy operation does not require any files to be uploaded, no more
 requests will be sent.
@@ -5551,7 +5551,7 @@ This is why you will see that your paths, for instance
 is converted to \f[C]\\\\?\\UNC\\server\\share\f[].
 .PP
 However, in rare cases this may cause problems with buggy file system
-drivers like EncFS (https://github.com/ncw/rclone/issues/261).
+drivers like EncFS (https://issues/261).
 To disable UNC conversion globally, add this to your
 \f[C]\&.rclone.conf\f[] file:
 .IP
@@ -6886,7 +6886,7 @@ which will delete everything under the path, \f[B]inluding\f[] empty
 directories.
 .PP
 This may be fixed at some point in Issue
-#100 (https://github.com/ncw/rclone/issues/100)
+#100 (https://issues/100)
 .SS Directory timestamps aren\[aq]t preserved
 .PP
 For the same reason as the above, rclone doesn\[aq]t have a concept of a

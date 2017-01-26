@@ -7,9 +7,9 @@ package dropbox_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/dropbox"
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
+	"dropbox"
+	"fs"
+	"fstest/fstests"
 )
 
 func TestSetup(t *testing.T) {

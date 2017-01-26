@@ -7,9 +7,9 @@ package hubic_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
-	"github.com/ncw/rclone/hubic"
+	"fs"
+	"fstest/fstests"
+	"hubic"
 )
 
 func TestSetup(t *testing.T) {

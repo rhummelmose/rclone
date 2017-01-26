@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"bazil.org/fuse"
-	"github.com/ncw/rclone/cmd"
-	"github.com/ncw/rclone/fs"
+	"cmd"
+	"fs"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"golang.org/x/sys/unix"

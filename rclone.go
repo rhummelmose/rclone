@@ -8,9 +8,9 @@ import (
 	"crypto/x509"
 	"crypto/tls"
 
-	"github.com/ncw/rclone/cmd"
-	_ "github.com/ncw/rclone/cmd/all" // import all commands
-	_ "github.com/ncw/rclone/fs/all"  // import all fs
+	"cmd"
+	_ "cmd/all" // import all commands
+	_ "fs/all"  // import all fs
 )
 
 func main() {

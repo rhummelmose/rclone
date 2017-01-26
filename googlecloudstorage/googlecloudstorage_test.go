@@ -7,9 +7,9 @@ package googlecloudstorage_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
-	"github.com/ncw/rclone/googlecloudstorage"
+	"fs"
+	"fstest/fstests"
+	"googlecloudstorage"
 )
 
 func TestSetup(t *testing.T) {

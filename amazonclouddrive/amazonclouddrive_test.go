@@ -7,9 +7,9 @@ package amazonclouddrive_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/amazonclouddrive"
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
+	"amazonclouddrive"
+	"fs"
+	"fstest/fstests"
 )
 
 func TestSetup(t *testing.T) {

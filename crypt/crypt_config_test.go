@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
+	"fs"
+	"fstest/fstests"
 )
 
 // Create the TestCrypt: remote

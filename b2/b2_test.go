@@ -7,9 +7,9 @@ package b2_test
 import (
 	"testing"
 
-	"github.com/ncw/rclone/b2"
-	"github.com/ncw/rclone/fs"
-	"github.com/ncw/rclone/fstest/fstests"
+	"b2"
+	"fs"
+	"fstest/fstests"
 )
 
 func TestSetup(t *testing.T) {

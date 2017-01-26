@@ -76,7 +76,7 @@ and this will build the binary in `$GOPATH/bin`.  If you have built
 rclone before then you will want to update its dependencies first with
 this
 
-    go get -u -v github.com/ncw/rclone/...
+    go get -u -v ...
 
 ## Installation with Ansible ##
 

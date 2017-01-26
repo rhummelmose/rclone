@@ -44,7 +44,7 @@ solaris/amd64"
 # Make space separated
 OSARCH=${OSARCH//$'\n'/ }
 
-gox --ldflags "-s -X github.com/ncw/rclone/fs.Version=${VERSION}" -output "build/{{.Dir}}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}" -osarch "${OSARCH}"
+gox --ldflags "-s -X fs.Version=${VERSION}" -output "build/{{.Dir}}-${VERSION}-{{.OS}}-{{.Arch}}/{{.Dir}}" -osarch "${OSARCH}"
 
 mv build/rclone-${VERSION}-darwin-amd64 build/rclone-${VERSION}-osx-amd64
 mv build/rclone-${VERSION}-darwin-386 build/rclone-${VERSION}-osx-386

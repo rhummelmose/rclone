@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ncw/rclone/fs"
+	"fs"
 )
 
 // Pacer state

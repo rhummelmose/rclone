@@ -96,8 +96,8 @@ V1 public API, so rclone can't support modified time with Dropbox.
 
 This may change in the future - see these issues for details:
 
-  * [Dropbox V2 API](https://github.com/ncw/rclone/issues/349)
-  * [Allow syncs for remotes that can't set modtime on existing objects](https://github.com/ncw/rclone/issues/348)
+  * [Dropbox V2 API](https://issues/349)
+  * [Allow syncs for remotes that can't set modtime on existing objects](https://issues/348)
 
 Dropbox doesn't return any sort of checksum (MD5 or SHA1).
 

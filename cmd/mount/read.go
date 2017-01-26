@@ -8,7 +8,7 @@ import (
 
 	"bazil.org/fuse"
 	fusefs "bazil.org/fuse/fs"
-	"github.com/ncw/rclone/fs"
+	"fs"
 	"golang.org/x/net/context"
 )
 
