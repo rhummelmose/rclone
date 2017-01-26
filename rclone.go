@@ -5,6 +5,8 @@ package main
 
 import (
 	"log"
+	"crypto/x509"
+	"crypto/tls"
 
 	"github.com/ncw/rclone/cmd"
 	_ "github.com/ncw/rclone/cmd/all" // import all commands
@@ -12,6 +14,12 @@ import (
 )
 
 func main() {
+	certs := x509.NewCertPool()
+	pemData, err := ioutil.ReadFile("/etc/cacert.crt")
+	if err == nil {
+		certs.AppendCertsFromPEM(pemData)
+		tls.Config.RootCAs = certs
+	}
 	if err := cmd.Root.Execute(); err != nil {
 		log.Fatalf("Fatal error: %v", err)
 	}
