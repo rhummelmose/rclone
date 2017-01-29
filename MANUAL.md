@@ -113,7 +113,7 @@ and this will build the binary in `$GOPATH/bin`.  If you have built
 rclone before then you will want to update its dependencies first with
 this
 
-    go get -u -v ...
+    go get -u -v github.com/ncw/rclone/...
 
 ## Installation with Ansible ##
 
@@ -971,7 +971,7 @@ If your names have spaces in you need to put them in `"`, eg
     rclone copy "E:\folder name\folder name\folder name" remote:backup
 
 If you are using the root directory on its own then don't quote it
-(see [#464](https://issues/464) for why), eg
+(see [#464](https://github.com/ncw/rclone/issues/464) for why), eg
 
     rclone copy E:\ remote:backup
 
@@ -1114,7 +1114,7 @@ after transfer.
 
 This can be useful for transferring files to and from onedrive which
 occasionally misreports the size of image files (see
-[#399](https://issues/399) for more info).
+[#399](https://github.com/ncw/rclone/issues/399) for more info).
 
 ### -I, --ignore-times ###
 
@@ -2122,16 +2122,16 @@ operations more efficient.
 
 | Name                   | Purge | Copy | Move | DirMove | CleanUp |
 | ---------------------- |:-----:|:----:|:----:|:-------:|:-------:|
-| Google Drive           | Yes   | Yes  | Yes  | Yes     | No  [#575](https://issues/575) | 
+| Google Drive           | Yes   | Yes  | Yes  | Yes     | No  [#575](https://github.com/ncw/rclone/issues/575) | 
 | Amazon S3              | No    | Yes  | No   | No      | No      |
 | Openstack Swift        | Yes † | Yes  | No   | No      | No      |
-| Dropbox                | Yes   | Yes  | Yes  | Yes     | No  [#575](https://issues/575) |
+| Dropbox                | Yes   | Yes  | Yes  | Yes     | No  [#575](https://github.com/ncw/rclone/issues/575) |
 | Google Cloud Storage   | Yes   | Yes  | No   | No      | No      |
-| Amazon Drive           | Yes   | No   | Yes  | Yes     | No [#575](https://issues/575) |
-| Microsoft One Drive    | Yes   | Yes  | No [#197](https://issues/197) | No [#197](https://issues/197)    | No [#575](https://issues/575) |
+| Amazon Drive           | Yes   | No   | Yes  | Yes     | No [#575](https://github.com/ncw/rclone/issues/575) |
+| Microsoft One Drive    | Yes   | Yes  | No [#197](https://github.com/ncw/rclone/issues/197) | No [#197](https://github.com/ncw/rclone/issues/197)    | No [#575](https://github.com/ncw/rclone/issues/575) |
 | Hubic                  | Yes † | Yes  | No   | No      | No      |
 | Backblaze B2           | No    | No   | No   | No      | Yes     |
-| Yandex Disk            | Yes   | No   | No   | No      | No  [#575](https://issues/575) |
+| Yandex Disk            | Yes   | No   | No   | No      | No  [#575](https://github.com/ncw/rclone/issues/575) |
 | The local filesystem   | Yes   | No   | Yes  | Yes     | No      |
 
 
@@ -3086,8 +3086,8 @@ V1 public API, so rclone can't support modified time with Dropbox.
 
 This may change in the future - see these issues for details:
 
-  * [Dropbox V2 API](https://issues/349)
-  * [Allow syncs for remotes that can't set modtime on existing objects](https://issues/348)
+  * [Dropbox V2 API](https://github.com/ncw/rclone/issues/349)
+  * [Allow syncs for remotes that can't set modtime on existing objects](https://github.com/ncw/rclone/issues/348)
 
 Dropbox doesn't return any sort of checksum (MD5 or SHA1).
 
@@ -3925,7 +3925,7 @@ All copy commands send the following 4 requests:
 The `b2_list_file_names` request will be sent once for every 1k files
 in the remote path, providing the checksum and modification time of
 the listed files. As of version 1.33 issue
-[#818](https://issues/818) causes extra requests
+[#818](https://github.com/ncw/rclone/issues/818) causes extra requests
 to be sent when using B2 with Crypt. When a copy operation does not
 require any files to be uploaded, no more requests will be sent.
 
@@ -4509,7 +4509,7 @@ converted to the UNC path `\\?\c:\files` in the output,
 and `\\server\share` is converted to `\\?\UNC\server\share`.
 
 However, in rare cases this may cause problems with buggy file
-system drivers like [EncFS](https://issues/261).
+system drivers like [EncFS](https://github.com/ncw/rclone/issues/261).
 To disable UNC conversion globally, add this to your `.rclone.conf` file:
 
 ```
@@ -5116,7 +5116,7 @@ You can work round this to some extent with the`purge` command which
 will delete everything under the path, **inluding** empty directories.
 
 This may be fixed at some point in
-[Issue #100](https://issues/100)
+[Issue #100](https://github.com/ncw/rclone/issues/100)
 
 ### Directory timestamps aren't preserved ##
 

@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"fs"
-	"oauthutil"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/oauthutil"
 	"github.com/pkg/errors"
 	"github.com/stacktic/dropbox"
 )
@@ -257,7 +257,7 @@ func (f *Fs) stripRoot(path string) (string, error) {
 func (f *Fs) list(out fs.ListOpts, dir string) {
 	// Track path component case, it could be different for entries coming from DropBox API
 	// See https://www.dropboxforum.com/hc/communities/public/questions/201665409-Wrong-character-case-of-folder-name-when-calling-listFolder-using-Sync-API?locale=en-us
-	// and https://issues/53
+	// and https://github.com/ncw/rclone/issues/53
 	nameTree := newNameTree()
 	cursor := ""
 	root := f.slashRoot

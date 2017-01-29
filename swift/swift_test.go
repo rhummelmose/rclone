@@ -7,9 +7,9 @@ package swift_test
 import (
 	"testing"
 
-	"fs"
-	"fstest/fstests"
-	"swift"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/fstest/fstests"
+	"github.com/ncw/rclone/swift"
 )
 
 func TestSetup(t *testing.T) {

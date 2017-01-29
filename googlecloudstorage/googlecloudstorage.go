@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"fs"
-	"oauthutil"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/oauthutil"
 	"github.com/pkg/errors"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"

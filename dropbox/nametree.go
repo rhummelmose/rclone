@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 	"github.com/stacktic/dropbox"
 )
 

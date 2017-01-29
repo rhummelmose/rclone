@@ -17,7 +17,7 @@ import (
 
 	"golang.org/x/text/unicode/norm"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 	"github.com/pkg/errors"
 )
 

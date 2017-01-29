@@ -5,7 +5,7 @@ package dircache
 import (
 	"sync"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 )
 
 // ListDirJob describe a directory listing that needs to be done

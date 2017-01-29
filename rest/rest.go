@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"sync"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 	"github.com/pkg/errors"
 )
 

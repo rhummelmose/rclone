@@ -90,7 +90,7 @@ sudo mandb </code></pre>
 <p>Make sure you have at least <a href="https://golang.org/">Go</a> 1.5 installed. Make sure your <code>GOPATH</code> is set, then:</p>
 <pre><code>go get -u -v github.com/ncw/rclone</code></pre>
 <p>and this will build the binary in <code>$GOPATH/bin</code>. If you have built rclone before then you will want to update its dependencies first with this</p>
-<pre><code>go get -u -v ...</code></pre>
+<pre><code>go get -u -v github.com/ncw/rclone/...</code></pre>
 <h2 id="installation-with-ansible">Installation with Ansible</h2>
 <p>This can be done with <a href="https://github.com/stefangweichinger/ansible-rclone">Stefan Weichinger's ansible role</a>.</p>
 <p>Instructions</p>
@@ -459,7 +459,7 @@ if src is directory
 <h3 id="windows">Windows</h3>
 <p>If your names have spaces in you need to put them in <code>&quot;</code>, eg</p>
 <pre><code>rclone copy &quot;E:\folder name\folder name\folder name&quot; remote:backup</code></pre>
-<p>If you are using the root directory on its own then don't quote it (see <a href="https://issues/464">#464</a> for why), eg</p>
+<p>If you are using the root directory on its own then don't quote it (see <a href="https://github.com/ncw/rclone/issues/464">#464</a> for why), eg</p>
 <pre><code>rclone copy E:\ remote:backup</code></pre>
 <h2 id="server-side-copy">Server Side Copy</h2>
 <p>Drive, S3, Dropbox, Swift and Google Cloud Storage support server side copy.</p>
@@ -506,7 +506,7 @@ rclone sync /path/to/files remote:current-backup</code></pre>
 <h3 id="ignore-size">--ignore-size</h3>
 <p>Normally rclone will look at modification time and size of files to see if they are equal. If you set this flag then rclone will check only the modification time. If <code>--checksum</code> is set then it only checks the checksum.</p>
 <p>It will also cause rclone to skip verifying the sizes are the same after transfer.</p>
-<p>This can be useful for transferring files to and from onedrive which occasionally misreports the size of image files (see <a href="https://issues/399">#399</a> for more info).</p>
+<p>This can be useful for transferring files to and from onedrive which occasionally misreports the size of image files (see <a href="https://github.com/ncw/rclone/issues/399">#399</a> for more info).</p>
 <h3 id="i---ignore-times">-I, --ignore-times</h3>
 <p>Using this option will cause rclone to unconditionally upload all files regardless of the state of files on the destination.</p>
 <p>Normally rclone would skip any files that have the same modification time and are the same size (or have the same checksum if using <code>--checksum</code>).</p>
@@ -1078,7 +1078,7 @@ The hashes are used when transferring data as an integrity check and can be spec
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
-<td align="center">No <a href="https://issues/575">#575</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/575">#575</a></td>
 </tr>
 <tr class="even">
 <td align="left">Amazon S3</td>
@@ -1102,7 +1102,7 @@ The hashes are used when transferring data as an integrity check and can be spec
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
-<td align="center">No <a href="https://issues/575">#575</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/575">#575</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Google Cloud Storage</td>
@@ -1118,15 +1118,15 @@ The hashes are used when transferring data as an integrity check and can be spec
 <td align="center">No</td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
-<td align="center">No <a href="https://issues/575">#575</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/575">#575</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Microsoft One Drive</td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
-<td align="center">No <a href="https://issues/197">#197</a></td>
-<td align="center">No <a href="https://issues/197">#197</a></td>
-<td align="center">No <a href="https://issues/575">#575</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/197">#197</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/197">#197</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/575">#575</a></td>
 </tr>
 <tr class="even">
 <td align="left">Hubic</td>
@@ -1150,7 +1150,7 @@ The hashes are used when transferring data as an integrity check and can be spec
 <td align="center">No</td>
 <td align="center">No</td>
 <td align="center">No</td>
-<td align="center">No <a href="https://issues/575">#575</a></td>
+<td align="center">No <a href="https://github.com/ncw/rclone/issues/575">#575</a></td>
 </tr>
 <tr class="odd">
 <td align="left">The local filesystem</td>
@@ -1898,8 +1898,8 @@ y/e/d&gt; y</code></pre>
 <p>Dropbox doesn't provide the ability to set modification times in the V1 public API, so rclone can't support modified time with Dropbox.</p>
 <p>This may change in the future - see these issues for details:</p>
 <ul>
-<li><a href="https://issues/349">Dropbox V2 API</a></li>
-<li><a href="https://issues/348">Allow syncs for remotes that can't set modtime on existing objects</a></li>
+<li><a href="https://github.com/ncw/rclone/issues/349">Dropbox V2 API</a></li>
+<li><a href="https://github.com/ncw/rclone/issues/348">Allow syncs for remotes that can't set modtime on existing objects</a></li>
 </ul>
 <p>Dropbox doesn't return any sort of checksum (MD5 or SHA1).</p>
 <p>Together that means that syncs to dropbox will effectively have the <code>--size-only</code> flag set.</p>
@@ -2387,7 +2387,7 @@ $ rclone -q --b2-versions ls b2:cleanup-test
 /b2api/v1/b2_create_bucket
 /b2api/v1/b2_list_buckets
 /b2api/v1/b2_list_file_names</code></pre>
-<p>The <code>b2_list_file_names</code> request will be sent once for every 1k files in the remote path, providing the checksum and modification time of the listed files. As of version 1.33 issue <a href="https://issues/818">#818</a> causes extra requests to be sent when using B2 with Crypt. When a copy operation does not require any files to be uploaded, no more requests will be sent.</p>
+<p>The <code>b2_list_file_names</code> request will be sent once for every 1k files in the remote path, providing the checksum and modification time of the listed files. As of version 1.33 issue <a href="https://github.com/ncw/rclone/issues/818">#818</a> causes extra requests to be sent when using B2 with Crypt. When a copy operation does not require any files to be uploaded, no more requests will be sent.</p>
 <p>Uploading files that do not require chunking, will send 2 requests per file upload:</p>
 <pre><code>/b2api/v1/b2_get_upload_url
 /b2api/v1/b2_upload_file/</code></pre>
@@ -2707,7 +2707,7 @@ $ rclone -q ls secret:
 <h3 id="long-paths-on-windows">Long paths on Windows</h3>
 <p>Rclone handles long paths automatically, by converting all paths to long <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#maxpath">UNC paths</a> which allows paths up to 32,767 characters.</p>
 <p>This is why you will see that your paths, for instance <code>c:\files</code> is converted to the UNC path <code>\\?\c:\files</code> in the output, and <code>\\server\share</code> is converted to <code>\\?\UNC\server\share</code>.</p>
-<p>However, in rare cases this may cause problems with buggy file system drivers like <a href="https://issues/261">EncFS</a>. To disable UNC conversion globally, add this to your <code>.rclone.conf</code> file:</p>
+<p>However, in rare cases this may cause problems with buggy file system drivers like <a href="https://github.com/ncw/rclone/issues/261">EncFS</a>. To disable UNC conversion globally, add this to your <code>.rclone.conf</code> file:</p>
 <pre><code>[local]
 nounc = true</code></pre>
 <p>If you want to selectively disable UNC, you can add it to a separate entry like this:</p>
@@ -3400,7 +3400,7 @@ nounc = true</code></pre>
 <p>With remotes that have a concept of directory, eg Local and Drive, empty directories may be left behind, or not created when one was expected.</p>
 <p>This is because rclone doesn't have a concept of a directory - it only works on objects. Most of the object storage systems can't actually store a directory so there is nowhere for rclone to store anything about directories.</p>
 <p>You can work round this to some extent with the<code>purge</code> command which will delete everything under the path, <strong>inluding</strong> empty directories.</p>
-<p>This may be fixed at some point in <a href="https://issues/100">Issue #100</a></p>
+<p>This may be fixed at some point in <a href="https://github.com/ncw/rclone/issues/100">Issue #100</a></p>
 <h3 id="directory-timestamps-arent-preserved">Directory timestamps aren't preserved</h3>
 <p>For the same reason as the above, rclone doesn't have a concept of a directory - it only works on objects, therefore it can't preserve the timestamps of directories.</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>

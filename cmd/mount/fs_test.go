@@ -15,9 +15,9 @@ import (
 	"strings"
 	"testing"
 
-	"fs"
-	_ "fs/all"
-	"fstest"
+	"github.com/ncw/rclone/fs"
+	_ "github.com/ncw/rclone/fs/all"
+	"github.com/ncw/rclone/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

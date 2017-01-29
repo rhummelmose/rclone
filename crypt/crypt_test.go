@@ -7,10 +7,10 @@ package crypt_test
 import (
 	"testing"
 
-	"crypt"
-	"fs"
-	"fstest/fstests"
-	_ "local"
+	"github.com/ncw/rclone/crypt"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/fstest/fstests"
+	_ "github.com/ncw/rclone/local"
 )
 
 func TestSetup(t *testing.T) {

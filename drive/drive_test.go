@@ -7,9 +7,9 @@ package drive_test
 import (
 	"testing"
 
-	"drive"
-	"fs"
-	"fstest/fstests"
+	"github.com/ncw/rclone/drive"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/fstest/fstests"
 )
 
 func TestSetup(t *testing.T) {

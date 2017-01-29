@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 	"github.com/pkg/errors"
 )
 

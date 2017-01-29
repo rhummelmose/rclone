@@ -103,16 +103,16 @@ operations more efficient.
 
 | Name                   | Purge | Copy | Move | DirMove | CleanUp |
 | ---------------------- |:-----:|:----:|:----:|:-------:|:-------:|
-| Google Drive           | Yes   | Yes  | Yes  | Yes     | No  [#575](https://issues/575) | 
+| Google Drive           | Yes   | Yes  | Yes  | Yes     | No  [#575](https://github.com/ncw/rclone/issues/575) | 
 | Amazon S3              | No    | Yes  | No   | No      | No      |
 | Openstack Swift        | Yes † | Yes  | No   | No      | No      |
-| Dropbox                | Yes   | Yes  | Yes  | Yes     | No  [#575](https://issues/575) |
+| Dropbox                | Yes   | Yes  | Yes  | Yes     | No  [#575](https://github.com/ncw/rclone/issues/575) |
 | Google Cloud Storage   | Yes   | Yes  | No   | No      | No      |
-| Amazon Drive           | Yes   | No   | Yes  | Yes     | No [#575](https://issues/575) |
-| Microsoft One Drive    | Yes   | Yes  | No [#197](https://issues/197) | No [#197](https://issues/197)    | No [#575](https://issues/575) |
+| Amazon Drive           | Yes   | No   | Yes  | Yes     | No [#575](https://github.com/ncw/rclone/issues/575) |
+| Microsoft One Drive    | Yes   | Yes  | No [#197](https://github.com/ncw/rclone/issues/197) | No [#197](https://github.com/ncw/rclone/issues/197)    | No [#575](https://github.com/ncw/rclone/issues/575) |
 | Hubic                  | Yes † | Yes  | No   | No      | No      |
 | Backblaze B2           | No    | No   | No   | No      | Yes     |
-| Yandex Disk            | Yes   | No   | No   | No      | No  [#575](https://issues/575) |
+| Yandex Disk            | Yes   | No   | No   | No      | No  [#575](https://github.com/ncw/rclone/issues/575) |
 | The local filesystem   | Yes   | No   | Yes  | Yes     | No      |
 
 

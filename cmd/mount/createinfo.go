@@ -5,7 +5,7 @@ package mount
 import (
 	"time"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 )
 
 // info to create a new object

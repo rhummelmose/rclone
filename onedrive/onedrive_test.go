@@ -7,9 +7,9 @@ package onedrive_test
 import (
 	"testing"
 
-	"fs"
-	"fstest/fstests"
-	"onedrive"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/fstest/fstests"
+	"github.com/ncw/rclone/onedrive"
 )
 
 func TestSetup(t *testing.T) {

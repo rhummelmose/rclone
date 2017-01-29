@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"fs"
+	"github.com/ncw/rclone/fs"
 )
 
 // Error describes a B2 error response

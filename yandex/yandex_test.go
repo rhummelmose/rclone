@@ -7,9 +7,9 @@ package yandex_test
 import (
 	"testing"
 
-	"fs"
-	"fstest/fstests"
-	"yandex"
+	"github.com/ncw/rclone/fs"
+	"github.com/ncw/rclone/fstest/fstests"
+	"github.com/ncw/rclone/yandex"
 )
 
 func TestSetup(t *testing.T) {

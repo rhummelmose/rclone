@@ -15,9 +15,9 @@ import (
 	"strings"
 	"time"
 
-	"fs"
-	_ "fs/all" // import all fs
-	"fstest"
+	"github.com/ncw/rclone/fs"
+	_ "github.com/ncw/rclone/fs/all" // import all fs
+	"github.com/ncw/rclone/fstest"
 )
 
 var (
